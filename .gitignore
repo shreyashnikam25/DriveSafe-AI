@@ -1,19 +1,29 @@
 # Python
 venv/
+.venv/
 __pycache__/
-*.pyc
+*.py[cod]
 
-# Node & Next.js
+# Node.js and Next.js
+node_modules/
 frontend/node_modules/
+.next/
 frontend/.next/
-frontend/.env*
 
-# Large Data & Media
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+# Large datasets and media
 data/
 *.mp4
 *.wav
 
-# (Optional) Ignore downloaded model weights if you don't want them in the repo
+# Optional model weights
 # yolov8n.pt
 # core/models/*.task
 # core/models/*.keras
